@@ -1,0 +1,283 @@
+* {
+	box-sizing: border-box;
+}
+
+.principal {
+	background: linear-gradient(#ffffff, rgb(56, 63, 71));  
+	display: grid;
+	grid-template-columns: repeat(11, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	height: 550px;
+	margin: 0px auto;
+	padding: 20px;
+	position: relative;
+	width: auto;
+}
+
+header {
+	position: absolute;
+	top: 30px;
+}
+
+.logo {
+	margin: 0px;
+	padding: 20px;
+}
+
+.text {
+	width: 40%;
+	left: 15%;
+	position: absolute;
+	top: 15%;
+}
+
+.text textarea {
+	border: 1px solid gray;
+	background-color: #E5E5E5;
+	width: 100%;
+}
+
+textarea {
+	border-radius: 10px;
+	border: none;
+	color: #0A3871;
+	font-family: 'Kalam', cursive;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+.button{
+	width: 60%;
+	position: absolute;
+	top: 10%;
+	height: 30%;
+	left: 35%;
+}
+
+.encriptar {
+	width: 40%;
+	left: 45%; 
+	position: absolute;
+	top: 15%;
+}
+
+.encriptar button {
+	background: #0A3871;
+	border-radius: 24px;
+	color: white;
+	font-family: 'Kalam', cursive;
+	font-size: 2vw;
+	font-style: normal;
+	font-weight: 400;
+	height: 67px;
+	line-height: 150%;
+	opacity: 0.8;
+	width: 90%;
+}
+
+.desencriptar {
+	width: 40%;
+	left: 45%;
+	position: absolute;
+	top: 65%;
+}
+
+.desencriptar button {
+	background: #D8DFE8;
+	border: 1px solid #0A3871;
+	border-radius: 24px;
+	color: #0A3871;
+	font-family: 'Kalam', cursive;
+	font-size: 2vw;
+	font-style: normal;
+	font-weight: 400;
+	height: 67px;
+	line-height: 150%;
+	width: 90%;
+}
+
+.button p {
+	color: #495057;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 1.5vw;
+	font-style: normal;
+	font-weight: 400;
+	left: -33%;  
+	line-height: 150%;
+	position: absolute;
+	top: -15%; 
+}
+
+aside {
+	height: 50%;
+	left: 15%;  
+	position: absolute;
+	text-align: center;
+	top: 47%;
+	width: 40%;
+}
+
+.text-1 {	
+    width: 100%;
+	position: absolute;
+	margin-top: 20px;
+}
+
+.text-1 textarea {
+	border: 1px solid gray;
+	background-color: #E5E5E5;
+	width: 100%;
+}
+
+.texto {
+	border-radius: 10px;
+	border: 1px solid rgb(255, 255, 255);
+	height: 250px;
+	position: absolute;
+	left: 100%; 
+	top: 5%; 
+	margin-left: 75px;
+	width: 60%;
+}
+
+.texto img{
+	position: absolute;
+	width: 80%;
+	top: 5%;
+	right: 10%;
+}
+
+.texto p {
+	color: #495057;
+	font-family: 'Kalam', cursive;
+	font-size: 1vw;
+}
+
+p span {
+	color: #343A40;
+	font-size: 2vw;
+	font-weight: 600;
+	line-height: 100%;
+}
+
+.copiar {
+	width: 90%;
+	left: 5%; 
+	position: absolute;
+	top: 72%;
+}
+
+.copiar button {
+	background: #D8DFE8;
+	border: 1px solid #0A3871;
+	border-radius: 24px;
+	color: #0A3871;
+	font-family: 'Kalam', cursive;
+	font-size: 2vw;
+	font-style: normal;
+	font-weight: 400;
+	height: 67px;
+	line-height: 150%;
+	width: 90%;
+}
+
+.encriptar button:hover{
+	color: black;
+	transition: 1s ease;
+	background-color: #E5E5E5;
+	border: 2px solid rgb(7, 248, 196);
+}
+.desencriptar button:hover{
+	background-color: #0A3871;
+	color: white;
+	border: 2px solid rgb(7, 248, 196);
+	transition: 1s ease;
+}
+.copiar button:hover{
+	background-color: #0A3871;
+	color: white;
+	border: 2px solid rgb(7, 248, 196);
+	transition: 1s ease;
+}
+
+footer {
+	font-size: 1.5vw;
+	background-color: rgb(56, 63, 71);
+	line-height: 50px;
+	bottom: 0px;
+	color: white;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-style: italic;
+	height: 50px;
+	margin: 0px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+@media screen and (max-width : 750px){
+	.logo {
+		position: absolute;
+		padding: 0px;
+	}
+}
+
+@media screen and (max-width : 750px) {
+	.text{
+		margin-top: 15px;
+	}
+}
+
+@media screen and (max-width : 700px) {
+	.button p{
+		font-size: 10px;
+		top: 10%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.encriptar{
+		left: 45%;
+		top: 25%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.desencriptar{
+		left: 45%;
+		top: 75%;
+	}
+}
+
+@media screen and (max-width : 650px) {
+	.encriptar button, .desencriptar button, .copiar button{
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width : 1120px){
+	.texto{
+		margin-left: 15%;
+		height: 160px;
+	}
+}
+
+@media screen and (max-width : 1120px) {
+	.texto img{
+		width: 90%;
+		height: 140px;
+	}
+}
+
+@media screen and (max-width : 900px){
+	.copiar{
+		width: 65vw;
+	}
+}
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <main class="principal">
+        <header>
+            <div class="logo">
+                <img src="./assets/LogoAlura.png" alt="LogoAlura">
+            </div>
+        </header>
+        <section class="text"> 
+            <textarea id="texto" rows="3" cols="20" placeholder="Ingrese su texto aqui"></textarea>
+        </section>
+        <section class="button">
+            <p>!Solo letras minusculas y acentos</p>
+            <div class="encriptar">
+                <button id="encriptar" name="encriptar">Encriptar</button>
+            </div>
+            <div class="desencriptar">
+                <button id="desencriptar" name="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <aside>
+            <div class="text-1">
+                <textarea class="output" id="resultado" cols="20" rows="3" placeholder="Texto encriptado" readonly style="display:block"></textarea>
+                <textarea class="output" id="sinTexto" cols="20" rows="3" placeholder="Aquí no hay nada" readonly style="display:none"></textarea>
+            </div>
+            <div class="texto">
+                <img src="./assets/Muñeco.png" alt="Muñeco">
+            </div>
+            <div class="copiar">
+                <button class="boton" onclick="copiar()">Copiar</button>
+            </div>
+        </aside>
+    </main>
+    <footer>Desarrollado por Carlos Gonzalez</footer>
+    <script src="./logica.js"></script>
+</body>
+</html>
